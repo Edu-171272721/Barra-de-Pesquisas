@@ -1,2 +1,15 @@
-# Barra-de-Pesquisas
-Projeto de uma barra de pesquisa estilizada com HTML e CSS puro! 🖌️ Inclui design moderno, efeitos ao interagir com o campo e personalização de cores e animações. Criado para praticar estruturação de formulários e técnicas de estilização responsiva e interativa.
+# Barra de Pesquisas
+Projeto: Barra de Pesquisa Estilizada
+Este projeto foi desenvolvido utilizando apenas HTML e CSS puro, com o objetivo de criar uma barra de pesquisa estilizada e funcional.
+
+Funcionalidades:
+Design limpo e moderno.
+Efeitos visuais ao interagir com a barra de pesquisa.
+Personalização de cores, bordas e animações para destacar o campo de entrada.
+Objetivo do projeto:
+Praticar conceitos básicos e intermediários de HTML e CSS, como:
+
+Estruturação de formulários.
+Uso de pseudo-classes e animações CSS.
+Aplicação de estilização responsiva.
+Este projeto é ideal para quem deseja aprender ou se inspirar na criação de componentes estilizados para a web.
