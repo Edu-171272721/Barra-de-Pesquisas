@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(287.56deg, #437DE2 0%, #16F9C1 100%)
+}
+
+
+
+/* Essa é a tag que engloba as demais, nela conseguimos juntar as imagens com o nosso input, assim alinhando todos os elementos de uma so vez.
+
+a primeira parte se refere a posicao da barra de pesquisas na tela, centralizando ele no meio
+
+a segunda e terceira servem para alinhar o input com as imagens dentro da barra, 
+
+o display flex, ajuda para que eles fiquem iguais independente de a tela estar minimizada ou nao, ou a tela estar menor ou nao
+
+o justify-content para que os itens sejam distribuídos igualmente no espaço disponível. O primeiro item fica no começo da linha e o último fica no final.
+
+e o aling-itens serve para manter os icones centralizados na box*/ 
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    background: #ffff;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+/* Essa tag se refer ao nosso input, no caso a barra de pesquisas, aqui colocamos os comandos referntes a translucides, para que a barra de pesquisas en si fique completamente invisivel
+
+Alem do comando 'transition': que deixa a animacao mais fluida,delimitando um tempo para que o aumento da barra ocorra*/ 
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+
+    padding: 0;
+
+    font-size: 16px;
+
+    transition: 0.4s;
+
+    width: 0;
+
+}
+
+
+
+/* Essa tag se refere somente aos nosso icones svg, logo aqui criamos a 'barra'que fiacara embaixo delas, colocando tambem o 
+
+comando 'display flex': para que os itens fiquema alinhados na mesma linha
+
+e o comando 'cursor': para que seja clicavel */ 
+
+.search-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+
+
+/* Esta parte é para que a lupa branca fique sem aparecer até que usemos o cmando hover, aí a trazemos de volta
+Para que nao fiquem as duas lupas colidindo entre si */ 
+
+.lupa{
+    display: none;
+}
+
+
+
+
+/* Aqui vemos que o primeiro hover serve para que, quando o mouse passar encima da nossa div(search box), o input(search text) aumente de tamanho para 320px de largura e com preenchimento de 20px */ 
+
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+
+
+
+
+
+/* Já aqui, definimos que para quando o mouse passar encima da nossa div(search-box), o (search-btn) seja preenchido pela cor azul, assim sendo possivel visualizar a lupa branca  */ 
+
+.search-box:hover > .search-btn{
+    background: #447ce7;
+}
+
+
+
+
+/* Aqui definimos que quando o mouse passar encima da nossa div(search-box) o (search-btn), no caso a tag da lupa azul somente, desapareca */ 
+
+.search-box:hover > .search-btn .lupa-azul{
+    display: none;
+}
+
+
+
+
+/* E aqui dizemos que quando o mouse passar encima da nossa div(search-box) o (search-btn), agora para a tag lupa somente, apreca enquanto a lupa azul desparece e a area do(search-btn) é cobrida de azul. */ 
+
+
+.search-box:hover > .search-btn .lupa{
+    display: block;
+}
