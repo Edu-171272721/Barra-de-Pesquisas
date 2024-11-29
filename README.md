@@ -1,4 +1,7 @@
 # Barra de Pesquisas
+
+![Capa do projeto](imagens/capa.png)
+
 Projeto: Barra de Pesquisa Estilizada
 Este projeto foi desenvolvido utilizando apenas HTML e CSS puro, com o objetivo de criar uma barra de pesquisa estilizada e funcional.
 
